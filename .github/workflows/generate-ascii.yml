@@ -10,7 +10,9 @@ jobs:
           uses: actions/checkout@v4
 
         - name: List repo files
-          run: ls -ltra
+          run: ls -ltra        
+        - name: Make script executable
+          run: chmod +x ascii-script.sh
 
         - name: Executing shell scripts
           run:  ./ascii-script.sh
