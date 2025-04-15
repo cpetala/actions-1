@@ -11,8 +11,8 @@ jobs:
 
         - name: List repo files
           run: ls -ltra        
-        - name: Make script executable
-          run: chmod +x ./ascii-script.sh
 
         - name: Executing shell scripts
-          run:  ./ascii-script.sh
+          run:  |
+            chmod +x ./ascii-script.sh
+            ./ascii-script.sh
