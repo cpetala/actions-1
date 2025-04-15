@@ -1,5 +1,5 @@
 name: My first Workflow
-
+#run again after some time
 on: push
 
 jobs:
@@ -15,10 +15,3 @@ jobs:
             ls -ltrha
             cat README.md
 
-
-
-        # - name: List files
-        #  run: ls
-
-        #- name: Read file
-        #  run: cat README.md
